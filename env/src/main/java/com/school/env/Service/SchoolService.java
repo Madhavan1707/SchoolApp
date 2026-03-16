@@ -29,4 +29,13 @@ public class SchoolService {
         return sr.findByName(name);
     }
 
+    public void delbyId(String id){
+
+            sr.deleteById(id);
+
+    }
+
+    public void delbyName(String name){
+        sr.deleteByName(name);
+    }
 }

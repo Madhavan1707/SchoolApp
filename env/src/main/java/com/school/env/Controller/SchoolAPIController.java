@@ -40,5 +40,17 @@ public class SchoolAPIController {
         return ss.findbyId(id);
     }
 
+    @DeleteMapping("name")
+    public void delbyName(@RequestParam String name){
+        ss.delbyName(name);
+    }
+    @DeleteMapping("id/{id}")
+    public void delbyID(@PathVariable String id){
+         ss.delbyId(id);
+    }
+    @DeleteMapping("id")
+    public void delbyID2(@RequestParam String id){
+        ss.delbyId(id);
+    }
 
 }
